@@ -1,0 +1,155 @@
+.social ul {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 0;
+    -webkit-padding-start: 0px;
+}
+
+.social li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.social ul li {
+    background: #222;
+    border-radius: 50%;
+    float: left;
+    height: 40px;
+    width: 40px;
+    list-style: none;
+}
+
+.social .soc-element {
+    background: #222;
+    border-radius: 50%;
+    float: left;
+    height: 40px;
+    width: 40px;
+    list-style: none;
+}
+
+.soc-vertical .soc-element {
+    clear: both;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.social {
+    font: 400 1em/50px "FontAwesome";
+}
+
+.social ul li:hover {
+    animation: transform .5s forwards, shadow 1s forwards;
+    -ms-animation: transform .5s forwards, shadow 1s forwards;
+    -moz-animation: transform .5s forwards, shadow 1s forwards;
+    -webkit-animation: transform .5s forwards, shadow 1s forwards;
+}
+
+.social .facebook:hover {
+    background: #3b5998;
+}
+
+.social .facebook:before {
+    color: #fff;
+    content: '\f09a';
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social .mail:hover {
+    background: dimgrey;
+}
+
+.social .mail:before {
+    color: #fff;
+    content: '\f0e0';
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social .printerest:hover {
+    background: #C92228;
+}
+
+.social .printerest:before {
+    color: #fff;
+    content: '\f231';
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social .px500:hover {
+    background: forestgreen;
+}
+
+.social .px500:before {
+    color: #fff;
+    content: '\f26e';
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social .instagram:hover {
+    background: #517fa4;
+}
+
+.social .instagram:before {
+    color: #fff;
+    content: '\f16d';
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+@-webkit-keyframes transform {
+    from {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+    }
+}
+
+@keyframes transform {
+    from {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+    }
+}
+
+@-webkit-keyframes shadow {
+    from {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.25);
+    }
+    to {
+        box-shadow: 0 0 0 10px transparent;
+    }
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.25);
+    }
+    to {
+        box-shadow: 0 0 0 10px transparent;
+    }
+}

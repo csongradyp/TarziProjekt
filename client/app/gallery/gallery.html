@@ -1,0 +1,16 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+    <div class="zoom-gallery" masonry column-width="200" preserve-order masonry-options="{ columnWidth: 100, transitionDuration: '0.4s', resizable: true, layoutMode: 'fitRows' }">
+        <div class="masonry-brick" ng-repeat="item in items track by $index">
+            <a class="wow fadeInUp" data-lightbox="group" href="{{item.image}}">
+                <img class="hover-zoom" ng-src="{{item.thumb}}">
+                <span class="text-content" ng-class="{landscape : true=={{item.landscape}}}"><span>{{item.description}}</span></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div ng-include="'components/social/social.html'"></div>
+</footer>

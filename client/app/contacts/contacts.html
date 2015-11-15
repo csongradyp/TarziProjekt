@@ -1,0 +1,78 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<section id="contact" class="contact">
+
+    <div class="container">
+        <div class="social soc-vertical">
+            <div>
+                <a class="wow fadeIn soc-element facebook" data-wow-delay="0.3s" href="http://facebook.com/tarzi.projekt" target="_blank"></a>
+                <a class="contact-link" href="http://facebook.com/tarzi.projekt" target="_blank">http://facebook.com/tarzi.projekt</a>
+            </div>
+            <div>
+                <a class="wow fadeIn soc-element instagram" data-wow-delay="0.4s"  href="http://instagram.com/tarziprojekt" target="_blank"> </a>
+                <a class="contact-link" href="http://instagram.com/tarziprojekt" target="_blank">http://instagram.com/tarziprojekt</a>
+            </div>
+            <div>
+                <a class="wow fadeIn soc-element px500" data-wow-delay="0.5s" href="https://500px.com/tarzi84" target="_blank"> </a>
+                <a class="contact-link" href="https://500px.com/tarzi84" target="_blank">http://facebook.com/tarzi.projekt</a>
+            </div>
+            <div>
+                <a class="wow fadeIn soc-element printerest" data-wow-delay="0.6s" href="https://www.pinterest.com/blinttarzi" target="_blank"> </a>
+                <a class="contact-link" href="https://www.pinterest.com/blinttarzi" target="_blank">https://www.pinterest.com/blinttarzi</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 fa fa-envelope fa-4x"></div>
+            <h3 class="col-md-3">
+                <a href="mailto:tarzi@tarziprojekt.hu" target="_blank">tarzi@tarziprojekt.hu</a>
+            </h3>
+        </div>
+
+        <div class="col-lg-6 text-center" style="padding-bottom: 25px; padding-top: 25px; font-size: 14pt;">vagy írj itt:</div>
+        <div class="row wow fadeIn" data-wow-delay="1s" ng-controller="ContactsCtrl">
+            <div class="col-lg-12">
+                <div class="boxed-grey">
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                </div>
+                <div class="col-md-6 contact-form">
+                    <form id="contact-form" action="https://docs.google.com/forms/d/1iI1h7ClF0zawJyPW1tjkgllkKElk_ROMQYlzZoC91R0/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="form-group">
+                            <label for="name">Név</label>
+
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-user"></span>
+                              </span>
+                                <input type="text" name="entry.x" ng-model="user.name" class="form-control" id="name" placeholder="Neved" required="required"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+
+                            <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                          </span>
+                                <input type="email" name="entry.x" ng-model="user.email" class="form-control" id="email" placeholder="e-mail címed ahova válaszunkat várod"
+                                       required="required"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Üzenet</label>
+                <textarea name="entry.x" id="message" ng-model="user.message" class="form-control" rows="9" cols="25" required="required"
+                          placeholder="Írd meg nekünk kérdésed vagy kérésed és mi készséggel válaszolunk"></textarea>
+                        </div>
+                        <button type="submit" ng-click="submitModal()" class="btn btn-lg btn-primary btn-block" id="sendMail">
+                            <span class="glyphicon glyphicon-send"></span>
+                            Küldés
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-3 col-sm-0"></div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:300);
+
+.about-img {
+   background: url('../../assets/images/about.jpg') no-repeat;
+    background-size: auto 100%;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+.barka {
+    font-size: 35pt;
+    padding-bottom: 20px;
+}
+
+.about {
+    padding-bottom: 70px;
+}
+
+.about p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+}
+
+.about span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40pt;
+}
+
+.about .quote {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+}

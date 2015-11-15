@@ -1,0 +1,114 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>Tarzi Projekt</title>
+    <meta name="description" content="Barka Bálint Tarzi Photograpy">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.tarziprojekt.hu" />
+    <meta property="og:title" content="Tarzi Projekt">
+    <meta property="og:site_name" content="Tarzi Projekt" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:description" content="Barka Bálint Tarzi Photograpy">
+    <meta property="og:image" content="tarziprojekt.hu/assets/images/brand.jpg">
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="122" />
+    <meta property="og:image:height" content="35" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+      <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+      <link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css" />
+      <!-- endbower -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+    <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <link rel="stylesheet" href="app/about/about.css">
+      <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/contacts/contacts.css">
+      <link rel="stylesheet" href="app/gallery/gallery.css">
+      <link rel="stylesheet" href="app/main/main.css">
+      <link rel="stylesheet" href="app/publications/publications.css">
+      <link rel="stylesheet" href="app/references/references.css">
+      <link rel="stylesheet" href="components/modal/modal.css">
+      <link rel="stylesheet" href="components/navbar/navbar.css">
+      <link rel="stylesheet" href="components/social/social.css">
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="tarziprojektApp">
+  <div class="loader"></div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">Egy <strong>Elavult</strong> bönészőt használ. Kérem <a href="http://browsehappy.com/">frissítse böngészőjét</a> a megfelelő megjelnítéshez</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div ng-view=""></div>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/json3/lib/json3.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
+      <script src="bower_components/wow/dist/wow.js"></script>
+      <script src="bower_components/get-style-property/get-style-property.js"></script>
+      <script src="bower_components/get-size/get-size.js"></script>
+      <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+      <script src="bower_components/eventie/eventie.js"></script>
+      <script src="bower_components/doc-ready/doc-ready.js"></script>
+      <script src="bower_components/matches-selector/matches-selector.js"></script>
+      <script src="bower_components/fizzy-ui-utils/utils.js"></script>
+      <script src="bower_components/outlayer/outlayer.js"></script>
+      <script src="bower_components/masonry/masonry.js"></script>
+      <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+      <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+      <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
+      <script src="bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+      <!-- endbower -->
+    <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+  <!-- endbuild -->
+
+
+        <!-- build:js({.tmp,client}) app/app.js -->
+
+        <script src="app/app.js"></script>
+          <!-- injector:js -->
+          <script src="app/about/about.controller.js"></script>
+          <script src="app/about/about.js"></script>
+          <script src="app/contacts/contacts.controller.js"></script>
+          <script src="app/contacts/contacts.js"></script>
+          <script src="app/gallery/gallery.controller.js"></script>
+          <script src="app/gallery/gallery.js"></script>
+          <script src="app/main/main.controller.js"></script>
+          <script src="app/main/main.js"></script>
+          <script src="app/publications/publications.controller.js"></script>
+          <script src="app/publications/publications.js"></script>
+          <script src="app/references/references.controller.js"></script>
+          <script src="app/references/references.js"></script>
+          <script src="components/modal/modal.service.js"></script>
+          <script src="components/navbar/navbar.controller.js"></script>
+          <!-- endinjector -->
+        <!-- endbuild -->
+</body>
+</html>

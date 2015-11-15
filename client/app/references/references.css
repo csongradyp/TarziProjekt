@@ -1,0 +1,66 @@
+.reference-image {
+    width: 200px;
+    /*height: 200px;*/
+    z-index: 100;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.section-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32pt;
+    font-weight: 300;
+}
+
+.section-heading {
+    /*margin-bottom: 30px;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.content-section {
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+
+.subheading {
+}
+
+.reference-type {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24pt;
+    padding-top: -10px;
+}
+
+.reference-text {
+    font-size: 14pt;
+}
+
+@media (min-width: 768px) {
+    .reference-image {
+        width: 250px;
+    }
+
+    .section-title {
+        font-size: 52pt;
+    }
+
+    .section-heading {
+        font-size: 24pt;
+    }
+}
+
+@media (min-width: 992px) {
+    .reference-image {
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .reference-image {
+        width: 300px;
+    }
+
+}

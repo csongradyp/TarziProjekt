@@ -1,0 +1,32 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+    <div class="col-lg-12 text-center">
+        <h1 class="section-title wow fadeInDown">Referenciák</h1>
+
+        <h3 class="section-heading text-muted wow fadeIn" data-wow-delay="0.5s">Eddigi munkáim és partnereim</h3>
+    </div>
+</div>
+
+<div ng-repeat="reference in myReferences track by $index" class="content-section wow fadeInUp" data-wow-delay="{{$index*100}}ms">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-6" ng-class-even="'col-lg-offset-1 col-sm-push-6'">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">{{reference.header}}</h2>
+                <h4 class="reference-type">{{reference.type}}</h4>
+
+                <p class="text-muted reference-text">{{reference.text}}</p>
+                <h4 ng-if="reference.place" class="subheading"><span class="fa fa-map-marker"></span> {{reference.place}}</h4>
+                <a ng-if="reference.link" href="{{reference.link}}" target="_blank">{{reference.link}}</a>
+            </div>
+            <div class="reference-image col-lg-5 col-sm-6" ng-class-even="'col-sm-pull-6'" ng-class-odd="'col-lg-offset-2'">
+                <img class="img-circle img-responsive" src="{{reference.image}}" alt="{{reference.header}}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" style="position: relative">
+    <div ng-include="'components/social/social.html'"></div>
+</footer>

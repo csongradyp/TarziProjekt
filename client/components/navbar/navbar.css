@@ -1,0 +1,42 @@
+.navbar {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16pt;
+    height: 52px;
+}
+
+.navbar .navbar-item {
+    background-color: #222;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar .navbar-item a {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.navbar-item.active{
+    border-bottom: 1px solid black;
+
+}
+
+.navbar-item:hover {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.navbar-brand {
+    padding-top: 3px;
+    vertical-align: middle;
+}
+
+.navbar-text {
+    margin-left: 15px;
+}
+
+@media( min-width: 1000px )  {
+    .navbar .navbar-item a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

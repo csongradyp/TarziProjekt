@@ -1,0 +1,83 @@
+.contact {
+    background: url('../../../assets/images/contact.jpg') no-repeat;
+    height: 500px;
+}
+
+@media (min-width: 1200px) {
+    .contact {
+        background: url('../../../assets/images/contact.jpg') no-repeat fixed right;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        background: url('../../../assets/images/contact.jpg') no-repeat fixed 10%;
+    }
+
+    .contact-link {
+        font-size: 8pt;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        background-image: none;
+    }
+
+    .contact-link {
+        font-size: 8pt;
+    }
+}
+
+.contact table {
+    letter-spacing: 2px;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+.contact-header {
+    padding-top: 10px;
+    height: 50px;
+}
+
+.contact-details {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.contact-details a {
+    color: whitesmoke;
+    font-size: 12pt;
+    padding-left: 10px;
+}
+
+.contact-details span {
+    padding-left: 10px;
+}
+
+.contact-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.heading-contact {
+    font-size: 12pt;
+}
+
+.contact-details .skype-name {
+    font-size: 12pt;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+.contact-link {
+    padding-left: 5px;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 12pt;
+}
