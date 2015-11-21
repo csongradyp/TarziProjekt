@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Josefin+Sans:100|Great+Vibes|Shadows+Into+Light+Two|Architects+Daughter);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|FontAwesome-webfont|Josefin+Sans:100|Great+Vibes|Shadows+Into+Light+Two|Architects+Daughter);
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -154,6 +154,12 @@ body {
     font-family: 'Architects Daughter', cursive;
 }
 
+.mindo {
+    display: none;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    color: grey;
+}
+
 @media (min-width: 300px) and (max-width: 413px) {
     .first {
         background: url('../../assets/images/1s.jpg') center right no-repeat #000;
@@ -260,6 +266,10 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 799px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1m.jpg') center right no-repeat #000;
         width: 768px;
@@ -297,6 +307,10 @@ body {
 }
 
 @media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 799px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1m.jpg') center right no-repeat #000;
         width: 768px;
@@ -333,6 +347,10 @@ body {
 }
 
 @media (min-width: 800px) and (max-width: 999px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1m.jpg') center center no-repeat #000;
         width: 1000px;
@@ -368,7 +386,12 @@ body {
     }
 
 }
-@media screen and (orientation:landscape) and (min-width: 800px) and (max-width: 999px) {
+
+@media screen and (orientation: landscape) and (min-width: 800px) and (max-width: 999px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1m.jpg') center center no-repeat #000;
         width: 1000px;
@@ -386,7 +409,6 @@ body {
         width: 1000px;
         height: 450px;
     }
-
 
     .carousel-caption {
         top: 30%;
@@ -407,6 +429,10 @@ body {
 }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1.jpg') center right no-repeat #000;
         width: 1200px;
@@ -431,6 +457,10 @@ body {
 }
 
 @media screen and (orientation: landscape) and (min-width: 1000px) and (max-width: 1199px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1.jpg') center right no-repeat #000;
         width: 1200px;
@@ -467,6 +497,10 @@ body {
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1.jpg') center right no-repeat #000;
         width: 1440px;
@@ -491,25 +525,80 @@ body {
 }
 
 @media (min-width: 1441px) {
+    .mindo {
+        display: inline;
+    }
+
     .first {
         background: url('../../assets/images/1.jpg') center right no-repeat #000;
         width: 1920px;
-        height: 800px;
+        height: 700px;
     }
 
     .second {
         background: url('../../assets/images/2.jpg') center right no-repeat #000;
         width: 1920px;
-        height: 800px;
+        height: 700px;
     }
-   .third {
+
+    .third {
         background: url('../../assets/images/3.jpg') center right no-repeat #000;
         width: 1920px;
-        height: 800px;
+        height: 700px;
     }
 
     .owl-item {
+        height: 700px;
+    }
+}
+
+@media screen and (min-height: 900px) {
+    .first {
         height: 800px;
+    }
+
+    .second {
+        height: 800px;
+    }
+    .third {
+        height: 800px;
+    }
+    .owl-item {
+        height: 800px;
+    }
+}
+
+
+@media screen and (min-height: 650px) and (max-height: 720px) {
+    .first {
+        height: 550px;
+    }
+
+    .second {
+        height: 550px;
+    }
+    .third {
+        height: 550px;
+    }
+    .owl-item {
+        height: 550px;
+    }
+}
+
+
+@media screen and (min-height: 721px) and (max-height: 768px) {
+    .first {
+        height: 600px;
+    }
+
+    .second {
+        height: 600px;
+    }
+    .third {
+        height: 600px;
+    }
+    .owl-item {
+        height: 600px;
     }
 }
 

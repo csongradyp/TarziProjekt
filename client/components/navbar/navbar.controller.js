@@ -22,7 +22,7 @@ angular.module('tarziprojektApp')
                 'title': 'Referenci\u00E1k',
                 'link': '/references'
             },{
-                'title': 'Piublik\u00E1ciók',
+                'title': 'Publik\u00E1ciók',
                 'link': '/publications'
             }, {
                 'title': 'Kapcsolat',

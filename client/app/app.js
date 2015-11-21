@@ -7,8 +7,6 @@ angular.module('tarziprojektApp', [
     'ngRoute',
     'ui.bootstrap',
     'wu.masonry'
-    //'PhotoSwipe',
-    //'PhotoSwipeUI_Default'
 ])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider

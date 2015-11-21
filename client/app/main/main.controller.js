@@ -19,8 +19,6 @@ angular.module('tarziprojektApp')
                 $scope.images = response.images;
             });
 
-        new WOW().init();
-
         var owl = $('.owl-carousel').owlCarousel({
             items: 1,
             center: true,

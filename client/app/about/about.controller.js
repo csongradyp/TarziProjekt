@@ -5,7 +5,6 @@ angular.module('tarziprojektApp')
 
         $(document).ready(function () {
             showRealContent();
-            new WOW().init();
         });
 
         function showRealContent() {

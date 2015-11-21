@@ -1,6 +1,20 @@
 'use strict';
 
 angular.module('tarziprojektApp')
+    .directive('hideLoaderOnFinish', function ($timeout) {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attr) {
+                if (scope.$last === true) {
+                    $timeout(function () {
+                        if($().hasClass('loader')) {
+                            $('#imageLoader').removeClass('loader');
+                        }
+                    });
+                }
+            }
+        }
+    })
     .controller('GalleryCtrl', function ($scope, $http, $routeParams) {
         $scope.galleries = {};
         $scope.items = [];
@@ -45,9 +59,9 @@ angular.module('tarziprojektApp')
                 type: 'image',
                 closeOnContentClick: false,
                 closeBtnInside: true,
-                //closeMarkup: '<button title="Bezár (Esc)" class="mfp-close" style="position: absolute; top: 30px; right: -15px"><img src="/Content/images/close-icon.png" width="25" height="29"/></button>',
                 closeMarkup: '<button title="Bezár (Esc)" type="button" class="mfp-close">&#215;</button>',
                 mainClass: 'mfp-with-zoom mfp-img-mobile',
+                tLoading: ' ',
                 image: {
                     verticalFit: true
                 },
@@ -55,7 +69,7 @@ angular.module('tarziprojektApp')
                     enabled: true,
                     tPrev: 'Előző (balra nyíl gomb)',
                     tNext: 'Következő (jobbra nyíl gomb)',
-                    tCounter: '<span class="mfp-counter">%curr% / %total% képből</span>'
+                    tCounter: '<span class="mfp-counter">%curr% / %total% képből</span>',
                 },
                 zoom: {
                     enabled: true,

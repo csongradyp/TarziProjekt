@@ -1,6 +1,7 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container">
+<div id="imageLoader" class="loader" hide-loader-on-finish></div>
+<div class="container" style="padding-bottom: 70px;">
     <div class="zoom-gallery" masonry column-width="200" preserve-order masonry-options="{ columnWidth: 100, transitionDuration: '0.4s', resizable: true, layoutMode: 'fitRows' }">
         <div class="masonry-brick" ng-repeat="item in items track by $index">
             <a class="wow fadeInUp" data-lightbox="group" href="{{item.image}}">

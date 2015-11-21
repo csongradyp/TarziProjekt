@@ -228,6 +228,7 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/public/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
             '<%= yeoman.dist %>/public/assets/fonts/*'
           ]
+          //, filter: 'isDirectory'
         }
       }
     },
@@ -245,7 +246,11 @@ module.exports = function (grunt) {
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
       html: ['<%= yeoman.dist %>/public/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/public/{,*/}*.css'],
+      css: [
+        '!<%= yeoman.dist %>/public/bower_components/animate.css',
+        '<%= yeoman.dist %>/public/bower_components/animate.css/animate.css',
+        '<%= yeoman.dist %>/public/{,*/}*.css'
+      ],
       js: ['<%= yeoman.dist %>/public/{,*/}*.js'],
       options: {
         assetsDirs: [
@@ -360,6 +365,22 @@ module.exports = function (grunt) {
             'package.json',
             'server/**/*'
           ]
+        }, {
+          // include font-awesome webfonts
+          //
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.client %>/bower_components/font-awesome',
+          src: ['fonts/*.*'],
+          dest: '<%= yeoman.dist %>/public/assets'
+        },{
+          // include bootstrap webfonts
+          //
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.client %>/bower_components/bootstrap/dist',
+          src: ['fonts/*.*'],
+          dest: '<%= yeoman.dist %>/public/assets'
         }]
       },
       styles: {

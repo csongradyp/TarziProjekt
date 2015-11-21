@@ -80,4 +80,79 @@
     padding-left: 5px;
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 12pt;
+    color: lightgrey;
+}
+
+.contact .social {
+    padding-bottom: 40px;
+}
+
+.entry-social {
+    margin-bottom: 20px;
+    color: rgb(126, 126, 126);
+    font-family: 'Open Sans', Tahoma, Verdana, Arial, sans-serif, Faruma, Faseyha;
+    font-size: 14px;
+    font-weight: normal;
+    height: auto;
+    width: 100%;
+    line-height: 23.799999237060547px;
+    float: left;
+    border: solid 0px #aaa;
+    text-align: left;
+}
+
+.entry-social div {
+    display: block;
+    margin: 2px;
+    vertical-align: middle;
+}
+
+.entry-social a span {
+    padding-left: 10px;
+}
+
+.entry-social a {
+    text-decoration: none;
+    display: block;
+    /*padding-left: 20px;*/
+    color: #FFFFFF !important;
+    font-weight: bold;
+    transition: background-color .3s;
+    border-radius: 10px;
+}
+
+.entry-social .fb a {
+    padding: 7px 10px 7px 10px;
+    background: #3B5999;
+}
+
+.entry-social .instagram a {
+    padding: 7px 10px 7px 10px;
+    background: #517fa4;
+}
+
+.entry-social .px500 a {
+    padding: 7px 10px 7px 10px;
+    background: forestgreen;
+}
+
+.entry-social .pinterest a {
+    padding: 7px 10px 7px 10px;
+    background: #CB2027;
+}
+
+.entry-social .fb a:hover {
+    background-color: rgb(50, 75, 129);
+}
+
+.entry-social .instagram a:hover {
+    background-color: rgb(72, 113, 140);
+}
+
+.entry-social .px500 a:hover {
+    background-color: rgb(25, 125, 10);
+}
+
+.entry-social .pinterest a:hover {
+    background-color: rgb(174, 28, 35);
 }

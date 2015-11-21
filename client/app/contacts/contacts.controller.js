@@ -4,7 +4,6 @@ angular.module('tarziprojektApp')
     .controller('ContactsCtrl', function ($scope, Modal) {
         $(document).ready(function () {
             showRealContent();
-            new WOW().init();
         });
 
         function showRealContent() {
