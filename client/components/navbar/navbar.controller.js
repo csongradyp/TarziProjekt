@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 angular.module('tarziprojektApp')
     .controller('NavbarCtrl', function ($scope, $location) {
@@ -16,8 +16,8 @@ angular.module('tarziprojektApp')
                 'title': 'Term\u00E9szet',
                 'link': '/gallery/termeszet'
             }, {
-                'title': 'Emberek',
-                'link': '/gallery/emberek'
+                'title': 'Editorial',
+                'link': '/gallery/editorial'
             }, {
                 'title': 'Referenci\u00E1k',
                 'link': '/references'

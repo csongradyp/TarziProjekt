@@ -17,6 +17,14 @@ angular.module('tarziprojektApp')
             $scope.user = {};
         };
 
+
+        $scope.validateAndSend = function () {
+            var form = document.getElementById('contact-form')[0];
+            if(form.checkValidity()) {
+                $scope.submitModal();
+            }
+        };
+
         $scope.submitModal = Modal.confirm.notify(function () {
             $scope.reset();
         });
@@ -28,7 +36,6 @@ angular.module('tarziprojektApp')
         $scope.$on("$destroy", function () {
             modalSubscription();
         });
-
         $scope.reset();
 
     });

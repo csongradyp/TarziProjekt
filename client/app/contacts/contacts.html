@@ -3,25 +3,24 @@
 <section id="contact" class="contact">
 
     <div class="container">
-        <div class="col-lg-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="entry-social">
                 <div class="row">
-                    <div class="col-lg-2 col-md-0 col-sm-0 col-xs-1"></div>
-                    <div class="fb col-lg-2 col-md-3 col-sm-3 col-sm-pull-1 col-xs-5">
-                        <a href="http://facebook.com/tarzi.projekt" target="_blank"><span class="fa fa-facebook-f" style="padding-right: 30px;"></span>Facebook</a>
+                    <div class="clearfix col-lg-1 col-md-1 col-sm-2"></div>
+                    <div class="fb wow fadeIn col-lg-5 col-md-5 col-sm-4 col-xs-6" data-wow-delay="0.1s">
+                        <a href="http://facebook.com/tarzi.projekt" target="_blank"><span class="fa fa-facebook-f"></span>Facebook</a>
                     </div>
-                    <div class="instagram col-lg-2 col-md-3 col-sm-3 col-sm-pull-1 col-xs-5">
-                        <a href="http://instagram.com/tarziprojekt" target="_blank"><span class="fa fa-pinterest-p" style="padding-right: 25px;"></span>Instagram</a>
+                    <div class="instagram wow fadeIn col-lg-5 col-md-5 col-sm-4 col-xs-6" data-wow-delay="0.3s">
+                        <a href="http://instagram.com/tarziprojekt" target="_blank"><span class="fa fa-pinterest-p"></span>Instagram</a>
                     </div>
-                    <div class="col-md-8"></div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 col-md-0 col-sm-0 col-xs-1"></div>
-                    <div class="pinterest col-lg-2 col-md-3 col-sm-3 col-sm-pull-1 col-xs-5">
-                        <a href="https://www.pinterest.com/blinttarzi" target="_blank"><span class="fa fa-pinterest-p" style="padding-right: 30px;"></span>Pinterest</a>
+                    <div class="clearfix col-lg-1 col-md-1 col-sm-2"></div>
+                    <div class="pinterest wow fadeIn col-lg-5 col-md-5 col-sm-4 col-xs-6" data-wow-delay="0.2s">
+                        <a href="https://www.pinterest.com/blinttarzi" target="_blank"><span class="fa fa-pinterest-p"></span>Pinterest</a>
                     </div>
-                    <div class="px500 col-lg-2 col-md-3 col-sm-3 col-sm-pull-1 col-xs-5">
-                        <a href="https://500px.com/tarzi84" target="_blank"><span class="fa fa-500px" style="padding-right: 30px;"></span>500px</a>
+                    <div class="px500 wow fadeIn col-lg-5 col-md-5 col-sm-4 col-xs-6" data-wow-delay="0.4s">
+                        <a href="https://500px.com/tarzi84" target="_blank"><span class="fa fa-500px"></span>500px</a>
                     </div>
                 </div>
             </div>
@@ -29,21 +28,28 @@
     </div>
 
     <div class="container">
-        <div class="row" style="padding-left: 40px;">
-            <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-2 col-xs-2 fa fa-envelope fa-4x"></div>
-            <h3 class="col-md-3" style="font-family: 'Oxygen', sans-serif;">
-                <a href="mailto:info@tarziprojekt.hu" target="_blank">info@tarziprojekt.hu</a>
-            </h3>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-lg-3 col-md-1 col-sm-2"></div>
+                <div class="wow fadeInLeft col-lg-2 col-md-3 col-sm-2 col-xs-3" data-wow-delay="0.5s">
+                    <div class="fa fa-envelope fa-4x"></div>
+                </div>
+                <h3 class="mail-address wow fadeIn col-lg-6 col-md-4 col-sm-5 col-xs-9" data-wow-delay="1s">
+                    <a href="mailto:info@tarziprojekt.hu" target="_blank">info@tarziprojekt.hu</a>
+                </h3>
+            </div>
+            <div class="write-here wow fadeIn col-lg-12 col-md-12 col-sm-12 text-center" data-wow-delay="1.1s">vagy írj itt:</div>
         </div>
+    </div>
 
-        <div class="col-lg-6 text-center" style="padding-bottom: 25px; padding-top: 25px; font-size: 14pt;">vagy írj itt:</div>
+    <div class="container">
         <div class="row wow fadeIn" data-wow-delay="1s" ng-controller="ContactsCtrl">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12">
                 <div class="boxed-grey">
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                 </div>
                 <div class="col-md-6 contact-form">
-                    <form id="contact-form" action="" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                    <form id="contact-form" action="https://docs.google.com/forms/d/18XZYPSmJsgZ9hK3WjAPNs2yMQVHAJr5MZsa86BGj6SM/formResponse" method="post" target="hidden_iframe" ng-submit="submitModal()">
                         <div class="form-group">
                             <label for="name">Név</label>
 
@@ -51,7 +57,7 @@
                               <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-user"></span>
                               </span>
-                                <input type="text" name="entry.x" ng-model="user.name" class="form-control" id="name" placeholder="Neved" required="required"/>
+                                <input required type="text" name="entry.1998940800" ng-model="user.name" class="form-control" id="name" placeholder="Neved" />
                             </div>
                         </div>
                         <div class="form-group">
@@ -61,16 +67,14 @@
                           <span class="input-group-addon">
                             <span class="glyphicon glyphicon-envelope"></span>
                           </span>
-                                <input type="email" name="entry.x" ng-model="user.email" class="form-control" id="email" placeholder="e-mail címed ahova válaszunkat várod"
-                                       required="required"/>
+                                <input required type="email" name="entry.665924036" ng-model="user.email" class="form-control" id="email" placeholder="e-mail címed ahova válaszolhatok"/>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="name">Üzenet</label>
-                <textarea name="entry.x" id="message" ng-model="user.message" class="form-control" rows="9" cols="25" required="required"
-                          placeholder="Írd meg nekünk kérdésed vagy kérésed és mi készséggel válaszolunk"></textarea>
+                            <textarea required name="entry.1574318947" id="message" ng-model="user.message" class="form-control" rows="9" cols="25" placeholder="Írd meg kérdésed vagy kérésed"></textarea>
                         </div>
-                        <button type="submit" ng-click="submitModal()" class="btn btn-lg btn-primary btn-block" id="sendMail">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block" id="sendMail">
                             <span class="glyphicon glyphicon-send"></span>
                             Küldés
                         </button>

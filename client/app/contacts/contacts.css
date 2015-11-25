@@ -83,12 +83,22 @@
     color: lightgrey;
 }
 
+.write-here {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 14pt;
+}
+
+.mail-address a {
+    font-family: 'Oxygen', sans-serif;
+    color: whitesmoke;
+}
+
 .contact .social {
     padding-bottom: 40px;
 }
 
 .entry-social {
-    margin-bottom: 20px;
     color: rgb(126, 126, 126);
     font-family: 'Open Sans', Tahoma, Verdana, Arial, sans-serif, Faruma, Faseyha;
     font-size: 14px;
@@ -97,24 +107,26 @@
     width: 100%;
     line-height: 23.799999237060547px;
     float: left;
-    border: solid 0px #aaa;
-    text-align: left;
+    /*text-align: left;*/
+}
+
+.entry-social .row {
+    padding-bottom: 10px;
 }
 
 .entry-social div {
     display: block;
-    margin: 2px;
     vertical-align: middle;
 }
 
 .entry-social a span {
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-right: 40px;
 }
 
 .entry-social a {
     text-decoration: none;
     display: block;
-    /*padding-left: 20px;*/
     color: #FFFFFF !important;
     font-weight: bold;
     transition: background-color .3s;
@@ -155,4 +167,11 @@
 
 .entry-social .pinterest a:hover {
     background-color: rgb(174, 28, 35);
+}
+
+@media screen and (max-device-width: 400px) {
+    .entry-social a span {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }

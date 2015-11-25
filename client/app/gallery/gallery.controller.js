@@ -20,7 +20,7 @@ angular.module('tarziprojektApp')
         $scope.items = [];
 
         switch ($routeParams.galleryId) {
-            case "emberek" :
+            case "editorial" :
                 getJson("https://dl.dropboxusercontent.com/s/v6edx80fioewc9z/emberek.json");
                 break;
             case "eskuvo" :
@@ -31,6 +31,9 @@ angular.module('tarziprojektApp')
                 break;
             case "utazas" :
                 getJson("https://dl.dropboxusercontent.com/s/v9xo2iptb8hkswb/utazas.json");
+                break;
+            default:
+                window.location.replace('/');
                 break;
         }
 

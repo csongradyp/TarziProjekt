@@ -12,7 +12,7 @@ angular.module('tarziprojektApp')
 
         WebFont.load({
             google: {
-                families: ['Oxygen:300', 'Open+Sans+Condensed:300', 'Josefin+Sans:100', 'Great+Vibes', 'Shadows+Into+Light+Two', 'Architects+Daughter']
+                families: ['Oxygen:300', 'Open+Sans+Condensed:300:latin,latin-ext', 'Josefin+Sans:100', 'Great+Vibes', 'Shadows+Into+Light+Two', 'Federo']
             }
         });
     });
